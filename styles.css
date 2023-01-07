@@ -1,0 +1,125 @@
+:root {
+  --primary-sb: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --neutral-main: hsl(217, 54%, 11%);
+  --neutral-card: hsl(216, 50%, 16%);
+  --neutral-card-shadow: hsl(216, 50%, 10%);
+  --neutral-line: hsl(215, 32%, 27%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  --fs: 1em;
+  --ff: 'Outfit', sans-serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--neutral-main);
+  text-align: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  margin-top: 10%;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 2vh;
+  width: 250px;
+  height: 450px;
+  background-color: var(--neutral-card);
+  padding: 1.2em;
+}
+
+.main-img {
+  border-radius: 2vh;
+}
+
+.card-title {
+  color: var(--neutral-white);
+  font-family: var(--ff);
+  padding-top: 1.2em;
+  text-align: start;
+  font-weight: var(--fw-semibold);
+}
+
+.card-desc {
+  color: var(--primary-sb);
+  font-family: var(--ff);
+  padding-top: 1em;
+  text-align: start;
+  font-weight: var(--fw-light);
+  font-size: .9rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth {
+  display: flex;
+  color: var(--primary-cyan);
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  font-size: .9rem;
+  width: 35%;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.timer {
+  display: flex;
+  color: var(--primary-sb);
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  font-size: .9rem;
+  width: 35%;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.line {
+  margin-top: 1.5em;
+  border: .05em solid var(--neutral-line);
+  background-color: var(--neutral-line);
+  border-radius: 3vh;
+}
+
+.creator {
+  display: flex;
+  color: var(--primary-sb);
+  font-family: var(--ff);
+  width: 80%;
+  height: 10%;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+  padding-top: 0.5rem;
+  font-weight: var(--fw-light);
+  font-size: .9rem;
+}
+
+.avatar {
+  scale: 1;
+  border: 1px solid white;
+  border-radius: 100vh;
+  width: 10%;
+}
+
+.name {
+  color: var(--neutral-white);
+}
